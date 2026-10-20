@@ -2,10 +2,6 @@
 
 MATLAB code for testing whether individual leopard seals (*Hydrurga leptonyx*) can be identified from the order of sounds in their underwater calling, using first-order Markov models (FOMMs).
 
-This repository accompanies the publication:
-
-> [Authors] ([Year]). [Title]. *[Journal]*. [DOI]
-
 **Author:** Lucinda Chambers, UNSW Sydney
 
 ## Overview
@@ -143,19 +139,7 @@ Random numbers are seeded (`rng(1)` and `RandStream` substreams inside `parfor`)
 | `null_distribution_perseal.csv` | Mean per-seal % correct for each permutation and cluster size. |
 | `null_distribution.mat` | The above, plus the permutation vectors used. |
 
-## Notes and limitations
-
-- Transitions never observed in a seal's model have probability 0, so a bout containing one gets a log-likelihood of −∞ under that model. No smoothing is applied.
-- For cluster sizes above 1, sequential clusters overlap, so test clusters are not independent. The permutation test is built with the same overlap.
-
-## Data availability
-
-[Describe where the sequence data are archived, e.g. a repository and DOI, or state that they are available on request.]
-
-## Citation
-
-If you use this code, please cite the paper above. [Optionally add a Zenodo DOI for this repository.]
 
 ## Licence
 
-[Choose a licence, e.g. MIT, and add a `LICENSE` file.]
+MIT Licence
